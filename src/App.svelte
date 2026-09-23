@@ -31,7 +31,7 @@
   let intermediatePlayers = $derived(sortedPlayers.filter(p => p.level.includes("Intermediate")));
   let advancedPlayers = $derived(sortedPlayers.filter(p => p.level.includes("Advanced")));
 
-  // SECTION 3: The Waiting Queue (Queued Matches)
+  // SECTION 3: (Queued Matches)
   let waitingQueue = $state([
     { id: 1, name: "Kiko & Marc vs Andrea & Miguel", type: "Doubles Match", p1Id: 1, p2Id: 2, p3Id: 3, p4Id: 4 }
   ]);
