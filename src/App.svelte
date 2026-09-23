@@ -6,19 +6,18 @@
     return new Date(date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   }
 
-  // SECTION 1: The Courts 
   let courts = $state([
     { id: 1, name: "Court 1", isAvailable: true, activeMatch: null as any },
     { id: 2, name: "Court 2", isAvailable: true, activeMatch: null as any },
     { id: 3, name: "Court 3", isAvailable: true, activeMatch: null as any }
   ]);
 
-  // SECTION 2: The Master Player Pool
+  // Sample players
   let players = $state([
-    { id: 1, name: "Kiko", level: "Low Advanced", registeredAt: new Date() },
-    { id: 2, name: "Marc", level: "High Advanced", registeredAt: new Date() },
-    { id: 3, name: "Andrea", level: "High Beginner", registeredAt: new Date() },
-    { id: 4, name: "Miguel", level: "Low Intermediate", registeredAt: new Date() }
+    { id: 1, name: "Hawk Eye", level: "Low Advanced", registeredAt: new Date() },
+    { id: 2, name: "Iron Man", level: "High Advanced", registeredAt: new Date() },
+    { id: 3, name: "Mary Jane", level: "High Beginner", registeredAt: new Date() },
+    { id: 4, name: "Gwen Stacey", level: "Low Intermediate", registeredAt: new Date() }
   ]);
 
   const levelWeights: Record<string, number> = {
